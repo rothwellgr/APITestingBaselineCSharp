@@ -1,0 +1,19 @@
+services:
+  httpbin:
+    image: kennethreitz/httpbin
+    platform: linux/amd64
+    container_name: httpbin-local
+
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-testing-baseline
+    depends_on:
+      - httpbin
+    environment:
+      HTTPBIN_URL: http://httpbin:80
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true

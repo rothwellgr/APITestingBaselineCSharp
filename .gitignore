@@ -1,0 +1,28 @@
+# Build output
+bin/
+obj/
+
+# IDE
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code (except committed config)
+.vscode/*
+!.vscode/launch.json
+
+# Test results
+TestResult.xml
+nunit-*.xml
+*.trx
+
+# NuGet
+*.nupkg
+**/[Pp]ackages/*
+
+# OS
+.DS_Store
+Thumbs.db

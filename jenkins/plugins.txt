@@ -1,0 +1,7 @@
+pipeline-model-definition:latest
+git:latest
+mstest:latest
+configuration-as-code:latest
+job-dsl:latest
+docker-workflow:latest
+timestamper:latest
